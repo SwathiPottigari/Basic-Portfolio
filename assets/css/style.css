@@ -1,5 +1,8 @@
-
-
+body{
+    display: block;
+    margin: 0;
+    background-image: url(../images/white-waves.png);
+}
 h3{
     background-color: #4aaaa5;
     color: white;
@@ -34,6 +37,7 @@ header{
 border-bottom-color: #cccccc;
 border-bottom-style: solid;
 border-bottom-width: 2px;
+width: 100%;
 }
 #header2{
     color: #4aaaa5;
@@ -51,17 +55,19 @@ p{
     color:#777777;
 }
 #maindiv{
-    background-image: url(../images/white-waves.png);
     width: 100%;
 }
-.container,#div4{
+.container,#wrapper{
     width: 920px;
     background-color:#ffffff;
-    margin: 0 auto;
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
+    margin: 0 auto;    
     padding: 20px;
+    margin-top: 1%;
 }
+
+/* .container{
+    margin-top: 1%;
+} */
 footer{
     background-color: #666666;
     border-top: 5px solid #4aaaa5;
@@ -70,6 +76,10 @@ footer{
     font-size: x-small;
     height: 30px;
     color: white;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 form{
     color: #777777;
@@ -95,28 +105,54 @@ textarea{
     border: 0;
     padding: 5px;
 }
-#div4{
+.flexrow{
     display: flex;
-    align-items: flex-start;
-    height: 450px;
-    flex-wrap: wrap;
-    justify-content: center;    
-    align-content: space-around;
-  
+    /* align-items: flex-start;*/
+    /* justify-content: center;   */
+    align-content: center;
+    /* align-content: space-around; 
+    margin-bottom: 1%;   
+   */
 }
-#img1{
-    padding: 80px;  
+
+#wrapper{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+   /* margin-left: 45%; */
+}
+
+
+/* #img1{
+    margin: 80px; 
 }
 #img2{
-    padding: 80px;   
+    margin: 80px;  
 }
 #img3{
-    padding: 80px;    
+    margin: 80px;      
 }
 #img4{
-    padding: 80px;   
+    margin: 80px;     
 }
 #img5{
-    padding: 80px;    
+    margin: 80px;      
+} */
+
+.portdiv{
+    position: relative;
+    margin: 10px;
 }
+.portp{
+    position:absolute;    
+    background-color:#4aaaa5;
+    text-align: center;
+    color:#ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 125px;
+    bottom: 0%; 
+    line-height: 1.5;
+
+}
+
 
