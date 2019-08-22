@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic-Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div id="div1">
-        <header id="header1">Swathi Pottigari</header>
+    <header>
+        <div id="div1"  ><h3>Swathi Pottigari</h3>
         <nav><a href="index.html">About</a>|<a href="portfolio.html">Portfolio</a>|<a href="Contact.html">Contact</a>
         </nav>
     </div>
-    <div id="div3">
+</header>
+
+<div id="maindiv">
+    <div class="container">
         <header id="header2">Contact</header>
         <form action="#">
             Name<br>
-            <input type="text" name="name" value="xxxxxx">
+            <input type="text" name="name" class="text" value="xxxxxx" >
             <br>
             Email<br>
-            <input type="text" name="email" value="example@gmail.com">
+            <input type="text" name="email" class="text" value="example@gmail.com">
             <br>
             Message<br>
-            <input type="text" name="message">
+            <textarea></textarea>
             <br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit">
         </form>
     </div>
+</div>
     <footer>Copyright@</footer>
 </body>
 
