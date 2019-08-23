@@ -1,7 +1,9 @@
-body{
+/* Styles used for common elements */
+html,body{
     display: block;
     margin: 0;
     background-image: url(../images/white-waves.png);
+    height:100%;
 }
 h3{
     background-color: #4aaaa5;
@@ -23,7 +25,12 @@ nav{
 a{
     color: #777777;
 }
-#div1{
+
+a:hover{
+    color:#4aaaa5;
+}
+
+#mainheading{
     position:relative;
     text-align: center;
     height: 80px;
@@ -39,13 +46,39 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 width: 100%;
 }
+
 #header2{
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-bottom-color:#dddddd;
-border-bottom-style: solid;
-border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    top: 0%;
 }
+.container,#wrapper{
+    width: 920px;
+    background-color:#ffffff;
+    margin: 0 auto;    
+    padding: 20px;
+    margin-top: 1%;
+    min-height: 100%;
+}
+
+footer{
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align: center;
+    font-size: x-small;
+    height: 30px;
+    color: white;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20%;
+}
+
+/* Styles for index.html */
 #profilepic{
    float: left;
    margin-right: 10px;
@@ -54,33 +87,10 @@ p{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#777777;
 }
-#maindiv{
-    width: 100%;
-}
-.container,#wrapper{
-    width: 920px;
-    background-color:#ffffff;
-    margin: 0 auto;    
-    padding: 20px;
-    margin-top: 1%;
-}
 
-/* .container{
-    margin-top: 1%;
-} */
-footer{
-    background-color: #666666;
-    border-top: 5px solid #4aaaa5;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    text-align: center;
-    font-size: x-small;
-    height: 30px;
-    color: white;
-    padding-top: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
+
+/* Styles for Contact.html */
 form{
     color: #777777;
     width: 920px;
@@ -93,7 +103,7 @@ textarea{
     columns: 50;
     grid-auto-rows: 100;
     width: 800px;
-    height: 200px;
+    height: 150px;
 }
 .text{
     width: 800px;
@@ -105,43 +115,29 @@ textarea{
     border: 0;
     padding: 5px;
 }
-.flexrow{
-    display: flex;
-    /* align-items: flex-start;*/
-    /* justify-content: center;   */
-    align-content: center;
-    /* align-content: space-around; 
-    margin-bottom: 1%;   
-   */
+
+#submit:hover{
+    background-color: #777777;
+    color: aqua;
 }
 
+/* Styles for Portfolio.html */
 #wrapper{
     display: flex;
     flex-direction: column; 
     justify-content: center; 
-   /* margin-left: 45%; */
+    margin-bottom: 10%;
 }
 
-
-/* #img1{
-    margin: 80px; 
+.flexrow{
+    display: flex;
+    align-content: center;
 }
-#img2{
-    margin: 80px;  
-}
-#img3{
-    margin: 80px;      
-}
-#img4{
-    margin: 80px;     
-}
-#img5{
-    margin: 80px;      
-} */
 
 .portdiv{
     position: relative;
-    margin: 10px;
+    margin-right: 80px;
+    margin-bottom: 50px;
 }
 .portp{
     position:absolute;    
@@ -149,10 +145,12 @@ textarea{
     text-align: center;
     color:#ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 125px;
+    width: 171px;
     bottom: 0%; 
     line-height: 1.5;
-
+    font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
